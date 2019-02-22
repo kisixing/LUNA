@@ -15,9 +15,9 @@ An Open Clinical Information System Development Platform
 
 <div align="center">English | <a href="./README-zh_CN.md">简体中文</a></div>
 
-## What is Landing?
+## What is LUNA?
 
-Landing is a template built by Ant Motion's motion components. It has a rich homepage template, downloads the template code package, and can be used quickly. You can also use the editor to quickly build your own dedicated page.
+LUNA is an openEHR based CIS(Clinical Information System) development platform. It has a rich component repository:archetype,template,user interface,query,storage and so on.
 
 <div align="center">
   <a href="https://landing.ant.design/edit">Go Editing 📝</a>
@@ -25,26 +25,18 @@ Landing is a template built by Ant Motion's motion components. It has a rich hom
 
 ## Features
 
-- [Specifications](https://landing.ant.design/docs/introduce)
-- [Download](https://landing.ant.design/docs/download)
-- [Responsive](https://landing.ant.design/docs/guide/layout)
+- [openEHR Specifications](https://specifications.openehr.org/)
 
 ## Templates
 
 Has a wealth of various page templates to provide downloads.
 
-[![](https://user-images.githubusercontent.com/6802825/47977555-ac77b080-e0f3-11e8-90f3-6aa04cce5351.jpg)](http://landing.ant.design)
 
 ## Modules
 
 Diverse modules, you can quickly and flexibly configure the page template you want.
 
-<div style="max-width: 600px">
-  <img src="https://user-images.githubusercontent.com/6802825/47980280-ec459480-e101-11e8-8a94-1ada4ff61faa.jpg" width="100%">
-</div>
-
 ## Example in scaffolding
 
-- [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example)
-- [umi-example](https://github.com/ant-motion/landing-umi-example)
+- [archetype](https://github.com/ant-motion/ant-motion-dva-cli-example)
 
