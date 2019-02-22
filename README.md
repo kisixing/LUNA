@@ -3,14 +3,13 @@
     <img width="150px" height="150px" src="https://gw.alipayobjects.com/zos/rmsportal/hSYPdZJwZeXAgfkktcEu.svg"/>
   </a>
 </p>
-<h1 align="center">LUNA/h1>
+<h1 align="center">LUNA</h1>
 
 <div align="center">
   
-Landing Pages of Ant Design System
 
-[![Dependencies](https://img.shields.io/david/ant-design/ant-design-landing.svg)](https://david-dm.org/ant-design/ant-design-landing)
-[![DevDependencies](https://img.shields.io/david/dev/ant-design/ant-design-landing.svg)](https://david-dm.org/ant-design/ant-design-landing?type=dev)
+An Open Clinical Information System Development Platform
+
 
 </div>
 
@@ -49,4 +48,3 @@ Diverse modules, you can quickly and flexibly configure the page template you wa
 - [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example)
 - [umi-example](https://github.com/ant-motion/landing-umi-example)
 
-An Open Clinical Information System Development Platform
