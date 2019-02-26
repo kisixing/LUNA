@@ -27,7 +27,7 @@ LUNA is an openEHR based CIS(Clinical Information System) development platform.
 <p>
 四.Luna缘起于探月和王者，想想目前着眼于妇幼、产科领域，阴晴圆缺与妇也很配。Luna构思于在19年1月初，当时的大事件就是嫦娥工程；Luna是我钟爱的一个英雄。</p>
 <div align="center">
-  <a href="./doc/whats-zh_CN.md">For Details</a>
+  <a href="./doc/whats_zh.md">For Details</a>
 </div>
 
 ## Technical Roadmap
