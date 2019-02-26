@@ -25,30 +25,30 @@ LUNA is an openEHR based CIS(Clinical Information System) development platform.
 <p>
 三.Luna目前仍存在于理想层面，甚至没有一行代码。在先辈的成果的基础上从设计每一个模块每一个组件开始积累跬步。希望Luna可以帮助到信息化的发展。</p>
 <p>
-四.Luna缘起于探月和王者，想想目前着眼于妇幼、产科领域，阴晴圆缺与妇也很配。Luna构思于在19年1月初，当时的大事件就是嫦娥工程；Luna是我钟爱的一个英雄。</p>
+四.Luna缘起于探月和王者，想想目前着眼于妇幼、产科领域，阴晴圆缺与妇也很配。Luna构思于在19年1月初，当时的大事件就是嫦娥工程；Luna也是我钟爱的一个英雄。</p>
 <div align="center">
-  <a href="./doc/whats_zh.md">For Details</a>
+  <a href="./docs/whats_zh.md">For Details</a>
 </div>
 
 ## Technical Roadmap
 
 Diverse modules, you can quickly and flexibly configure the page template you want.
 <div align="center">
-  <a href="./doc/roadmap-zh_CN.md">For Details</a>
+  <a href="./docs/roadmap-zh_CN.md">For Details</a>
 </div>
 
 ## LUNA In Obstetrics
 
 Has a wealth of various page templates to provide downloads.
 <div align="center">
-  <a href="./doc/obis-zh_CN.md">For Details</a>
+  <a href="./docs/obis-zh_CN.md">For Details</a>
 </div>
 ## Tools 
 
 - [archetype](https://github.com/ant-motion/ant-motion-dva-cli-example)
 - [template](https://github.com/ant-motion/ant-motion-dva-cli-example)
 <div align="center">
-  <a href="./doc/tools-zh_CN.md">For Details</a>
+  <a href="./docs/tools-zh_CN.md">For Details</a>
 </div>
 ## Reference
 
