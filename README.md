@@ -13,14 +13,14 @@ An Open Clinical Information System Development Platform - Especially For Specia
 一款开放的临床信息系统开发平台，尤其针对专科电子病历的开发
 </div>
 
-<div align="center"> 简体中文 | <a href="./README-zh_CN.md">English</a></div>
+<div align="center"> 简体中文 | <a href="./README-zh_CN.md">English(notsupport)</a></div>
 
 ## What is LUNA?
 
 LUNA is an openEHR based CIS(Clinical Information System) development platform. It has a rich component repository:archetype,template,user interface,query,storage and so on.
 
 <div align="center">
-  <a href="https://landing.ant.design/edit">Go Editing 📝</a>
+  <a href="https://landing.ant.design/edit">For Details 📝</a>
 </div>
 
 ## Reference
