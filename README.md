@@ -8,12 +8,12 @@
 <div align="center">
   
 
-An Open Clinical Information System Development Platform
+An Open Clinical Information System Development Platform - Especially For Specialist EHR
 
-
+一款开放的临床信息系统开发平台，尤其针对专科电子病历的开发
 </div>
 
-<div align="center">English | <a href="./README-zh_CN.md">简体中文</a></div>
+<div align="center"> 简体中文 | <a href="./README-zh_CN.md">English</a></div>
 
 ## What is LUNA?
 
