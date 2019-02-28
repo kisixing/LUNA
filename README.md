@@ -17,7 +17,7 @@ An Open Clinical Information System Development Platform - Especially For Specia
 
 ## What is Luna?
 
-LUNA is an openEHR based CIS(Clinical Information System) development platform.
+Luna is an openEHR based CIS(Clinical Information System) development platform.
 <p align="center">
 <img width="780px" height="450px" src="./luna_arc.png"/>
 </p>
@@ -29,7 +29,7 @@ LUNA is an openEHR based CIS(Clinical Information System) development platform.
 四.Luna缘起于探月和王者，想想目前lian-med着眼于妇幼、产科领域，月亮的阴晴圆缺与妇也很配。Luna构思于在19年1月初，当时的大事件就是嫦娥工程；Luna也是我钟爱的一个英雄。
 </br>
 <div align="center">
-背景、理念、愿景
+背景、理念、愿景...
   <a href="./docs/whats-zh.md">For Details</a>
 </div>
 
@@ -41,7 +41,7 @@ LUNA is an openEHR based CIS(Clinical Information System) development platform.
 第四，统一查询组件
 第五，前端生成器项目
 <div align="center">
-  project
+  Project...
   <a href="./docs/roadmap-zh_CN.md">For Details</a>
 </div>
 
@@ -51,13 +51,6 @@ LUNA is an openEHR based CIS(Clinical Information System) development platform.
 <div align="center">
   业务抽象、临床领域模型、UI组件、风险评估...
   <a href="./docs/obis-zh_CN.md">For Details</a>
-</div>
-## Tools 
-
-- [archetype](https://github.com/ant-motion/ant-motion-dva-cli-example)
-- [template](https://github.com/ant-motion/ant-motion-dva-cli-example)
-<div align="center">
-  <a href="./docs/tools-zh_CN.md">For Details</a>
 </div>
 
 ## Repository For Models & Templates 
