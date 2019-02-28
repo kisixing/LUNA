@@ -18,7 +18,7 @@ An Open Clinical Information System Development Platform - Especially For Specia
 ## What is LUNA?
 
 LUNA is an openEHR based CIS(Clinical Information System) development platform.  
-<img width="600px" src="./luna_arc.png"/>
+<img width="768px" src="./luna_arc.png"/>
 
 一、这里重点提到了openEHR,openEHR是一个致力于电子病历相关系统的国际组织;是一种muti-level,single source modelling的面向服务的软件架构;是一系列分层模型的规范;对我而言他更是一种关于电子病历的方法论：基于几十年的电子病历研发、实施经验的积累和对临床医学、电子病历发展的理解，提出了如何能让电子病历类系统成功实施-符合临床需求指导临床决策-的方向和方法（了解更多，请见reference中的链接）。Luna本质是由临床的专家通过CDML（Clinical Domain Model Language）对医疗信息系统的需求建模，系统后台根据CDM自动生成数据存储层、检索层、展示层及基础的安全等模块和组件，形成一个完整的医疗业务系统。  
 二、说到“平台”,这个词已是在国内互联网圈中“普适”的标签。我认为平台本质是服务B端，再通过B端服务C端。不是任何一款多用户应用的软件产品都能称为平台，关键在于能为B端提供什么资源？怎样提供？这些资源是否有利于更好的服务共有的C端？Luna期望服务于医疗信息化服务商、各级医疗机构、区域卫计委（局），最终通过EHR服务医疗参与者。   
