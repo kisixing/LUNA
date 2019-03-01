@@ -1,12 +1,10 @@
 <p align="center">
   <a href="http://landing.ant.design">
-    <img width="160px"  src="./luna_logo.png"/>
+    <img width="180px"  src="./luna_logo.png"/>
   </a>
 </p>
 <h1 align="center">LUNA</h1>
-
 <div align="center">
-  
 
 An Open Clinical Information System Development Platform - Especially For Specialist EHR
 
