@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://landing.ant.design">
-    <img width="150px" height="150px" src="https://gw.alipayobjects.com/zos/rmsportal/hSYPdZJwZeXAgfkktcEu.svg"/>
+    <img width="150px" height="150px" src="./luna_logo.png"/>
   </a>
 </p>
 <h1 align="center">LUNA</h1>
