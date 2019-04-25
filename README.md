@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://landing.ant.design">
+  <a href="http://www.lian-med.com">
     <img width="180px"  src="./luna_logo.png"/>
   </a>
 </p>
