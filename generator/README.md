@@ -1,6 +1,3 @@
-v1.1.6
-使用方法
-
 
 # generator-luna
 
@@ -8,40 +5,40 @@ v1.1.6
 
 
 ### Luna generator Goals
- * Provide best performance in server side and android client
- * Provide simple toJSONString() and parseObject() methods to convert Java objects to JSON and vice-versa
- * Allow pre-existing unmodifiable objects to be converted to and from JSON
- * Extensive support of Java Generics
- * Allow custom representations for objects
- * Support arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types)
+ * Provide a framework for healthcare software architecture
+ * Provide a notion about continual development
+ * One small step towards Luna's mission
 
 
 ## Documentation
 
-- [Documentation Home](https://github.com/alibaba/fastjson/wiki)
-- [Contributing Code](https://github.com/nschaffner/fastjson/blob/master/CONTRIBUTING.md)
-- [Frequently Asked Questions](https://github.com/alibaba/fastjson/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+- [Jhipster Home](https://www.jhipster.tech/)
+- [Demo Site](https://luna.lian-med.com/)
+- [More notions](https://github.com/alibaba/fastjson/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
 ## Usage
-
-``` first of all you need to install nodejs  
+v1.1.6
+first of all you need to install nodejs  
 - [Nodejs Home](https://nodejs.org/en/）
+``` 
+npm -version
 ```
-
-``` install package :you will install our generator globally
+install package :you will install our generator globally
+``` 
 npm install -g generator-luna
 ```
-
-``` make your project dir eg. windows 
+make your project dir eg. windows
+```  
 cmd
 mkdir myproject
 ```
+copy the .jdl and run the command
 
-``` copy the .jdl and run the command
-cp the OBDML02-auth.jh file into your project directory
+copy the OBDML02-auth.jh file into your project directory
+``` 
 luna genform OBDML02-auth.jh --force
 ```
-
-``` at last, run mvnw
+at last, run mvnw
+``` 
 mvnw
 ```
