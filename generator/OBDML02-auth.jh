@@ -1,0 +1,1188 @@
+application {
+  config {
+    applicationType monolith,
+    baseName GenL1,
+    packageName com.lianmed.genl1,
+    serverPort 8088,
+    authenticationType jwt,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    websocket false,
+    databaseType sql,
+    devDatabaseType mysql,
+    prodDatabaseType mysql,
+    searchEngine false,
+    messageBroker false,
+    serviceDiscoveryType false,
+    buildTool maven,
+    enableSwaggerCodegen false,
+    clientFramework react,
+    useSass false,
+    clientPackageManager npm,
+    testFrameworks [],
+    jhiPrefix luna,
+    dtoSuffix DTO,
+    enableTranslation true,
+    nativeLanguage zh-cn,
+    languages [en, zh-cn]
+  }
+  entities *
+}
+/**
+*孕册信息
+*/
+entity Pregnancy{
+    /**
+    *门诊号
+    */
+    outpatientNO String
+    /**
+    *住院号
+    */
+    inpatientNO String
+    /**
+    *产检编号
+    */
+    checkupNO String
+    /**
+    *产检编号
+    */
+    checkupNO String
+    /**
+    *医保类型
+    */
+    insuranceType String
+    /**
+    *孕妇姓名
+    */
+    name String
+    /**
+    *孕妇年龄
+    */
+    age Integer
+    /**
+    *性别
+    */
+    gender String
+    /**
+    *出生日期
+    */
+    dob LocalDate
+    /**
+    *证件类型
+    */
+    idType Integer
+    /**
+    *证件号码
+    */
+    idNO String
+    /**
+    *国籍
+    */
+    nationality String
+    /**
+    *籍贯
+    */
+    nativeplace String
+    /**
+    *民族
+    */
+    ethnic String
+    /**
+    *联系电话
+    */
+    telephone String
+    /**
+    *婚姻状况
+    */
+    maritalStatus Integer
+    /**
+    *近亲结婚
+    */
+    nearRelation Boolean
+    /**
+    *结婚年数
+    */
+    maritalYears Integer
+    /**
+    *学历-教育情况
+    */
+    education String
+    /**
+    *职业
+    */
+    occupation String
+    /**
+    *工作地-如公司名
+    */
+    workplace String
+    /**
+    *工作电话
+    */
+    workPhone String
+    /**
+    *职业备注详情
+    */
+    occupationDetail String
+    /**
+    *家庭收入
+    */
+    familyIncome String
+    /**
+    *居住地
+    */
+    residenceAddress String
+    /**
+    *产修地地
+    */
+    postpartumAddress String
+    /**
+    *配偶姓名
+    */
+    partnerName String
+    /**
+    *配偶性别
+    */
+    partnerGender String
+    /**
+    *配偶出生日期
+    */
+    partnerDob LocalDate
+    /**
+    *配偶证件类型
+    */
+    partnerIdType Integer
+    /**
+    *配偶证件号码
+    */
+    partnerIdNO String
+    /**
+    *配偶国籍
+    */
+    partnerNationality String
+    /**
+    *配偶籍贯
+    */
+    partnerNativeplace String
+    /**
+    *配偶民族
+    */
+    partnerEthnic String
+    /**
+    *配偶手机号码
+    */
+    partnerTelephone String
+    /**
+    *配偶职业
+    */
+    partnerOccupation String
+    /**
+    *配偶工作地点
+    */
+    partnerWorkplace String
+    /**
+    *配偶职业详情
+    */
+    partnerOccupationDetail String 
+    /**
+    *末次月经 | Last menstrual period 
+    */
+    lmp LocalDate
+    /**
+    *预产期 | estimated date of deliving
+    */
+    edd LocalDate
+    /**
+    *修订预产期
+    */
+    sureEdd LocalDate
+    /**
+    *孕次
+    */
+    gravidity Integer
+    /**
+    *产次
+    */
+    parity Integer
+    /**
+    *孕周
+    */
+    gestationalWeek Integer
+    /**
+    *创建时间
+    */
+    createDate LocalDate
+    /**
+    *修改时间
+    */
+    modifyDate LocalDate
+    /**
+    *确认时间
+    */
+    validateDate LocalDate
+    /**
+    *特殊说明
+    */
+    note String
+    /**
+    *建册方式(自助建档，第三方同步，医院建档)
+    */
+    recordsrc String
+    /**
+    *档案状态
+    */
+    recordstate String
+}
+
+/**
+*孕产史信息
+*/
+entity PregnancyHistory {
+    /**
+    *孕数
+    */
+    gravidityindex Integer
+    /**
+    *年
+    */
+    year String
+    /**
+    *月
+    */
+    month String
+    /**
+    *足月产
+    */
+    term Boolean
+    /**
+    *顺产
+    */
+    vaginalDelivery Boolean
+    /**
+    *剖宫产
+    */
+    cesareanSection Boolean
+    /**
+    *钳产
+    */
+    forceps Boolean
+    /**
+    *吸引产
+    */
+    vacuumAssisted Boolean
+    /**
+    *臀助产
+    */
+    breechMidwifery Boolean
+    /**
+    *产溽热
+    */
+    puerperalFever Boolean
+    /**
+    *出血
+    */
+    hemorrhage Boolean
+    /**
+    *流产
+    */
+    abortion Boolean
+    /**
+    *药物流产
+    */
+    medicalAbortion Boolean
+    /**
+    *手术流产
+    */
+    surgicalAbortion Boolean
+    /**
+    *手术流产
+    */
+    naturalAbortion Boolean
+    /**
+    *流产
+    */
+    abortion Boolean
+    /**
+    *死产
+    */
+    stillbirth Boolean
+    /**
+    *死胎
+    */
+    fetusdeath Boolean
+    /**
+    *引产
+    */
+    inducedLabor Boolean
+    /**
+    *异位妊娠
+    */
+    ectopicPregnancy Boolean
+    /**
+    *葡萄胎
+    */
+    hydatidMole Boolean
+    /**
+    *多胎妊娠
+    */
+    multiple Boolean
+    /**
+    * 孩子性别，多胎使用逗号,分隔（下同）
+    */
+    childGender String
+    /**
+    *孩子健在
+    */
+    childLiving String
+    /**
+    *死亡
+    */
+    childDeath String
+    /**
+    *畸形
+    */
+    childDeformity String
+    /**
+    *出生体重
+    */
+    neonateWeight String
+    /**
+    *并发症
+    */
+    complication String
+    /**
+    *备注
+    */
+    note String
+}
+/**
+*疾病史
+*/
+entity DiseaseHistory {
+    /**
+    *高血压
+    */
+    hypertension Boolean
+    hypertensionNote String
+    /**
+    *肾病
+    */
+    nephropathy Boolean
+    nephropathyNote String
+	/**
+    *呼吸系统疾病
+    */
+	respiratoryDisease Boolean
+	respiratoryDiseaseNote String
+	/**
+    *胃病
+    */
+	gastroDisease Boolean
+	gastroDiseaseNote String
+	/**
+    *肝病
+    */
+	hepaticDisease Boolean
+	hepaticDiseaseNote String
+	/**
+    *癫痫
+    */
+	epilepsy Boolean
+	epilepsyNote String
+	/**
+    *心脏病
+    */
+	cardiacDisease Boolean
+	cardiacDiseaseNote String
+	/**
+    *内分泌病
+    */
+	endocrineDisease Boolean
+	endocrineDisease String
+	/**
+    *甲状腺
+    */
+	thyroidDisease Boolean
+	thyroidDisease String
+	/**
+    *血液病
+    */
+	hematopathy Boolean
+	hematopathyNote String
+	/**
+    *心理疾病
+    */
+	mentalDisease Boolean
+	mentalDiseaseNote String
+	/**
+    *糖尿病
+    */
+	diabetes Boolean
+	diabetesNote String
+}
+/**
+*双向转诊
+*/
+entity Referral {
+	/**
+    *向上转诊机构
+    */
+	upwardOrganization Boolean
+    /**
+    *向上转诊科室
+    */
+	upwardDepartment String
+    /**
+    *向上转诊接收医生
+    */
+	upwardTakenDoctor String
+    /**
+    *向上转诊原因
+    */
+	upwardReason String
+    /**
+    *向上转诊时间
+    */
+	upwardDate LocalDate
+    /**
+    *向上转诊申请（请求）医生
+    */
+	upwardRequestDoctor String
+    /**
+    *向上转诊确认时间
+    */
+	upwardTakenDate LocalDate
+	/**
+    *向下转诊机构
+    */
+	downwardOrganization Boolean
+    /**
+    *向下转诊科室
+    */
+	downwardDepartment String
+    /**
+    *向下转诊接收医生
+    */
+	downwardTakenDoctor String
+    /**
+    *向下转诊原因
+    */
+	downwardReason String
+    /**
+    *向下转诊时间
+    */
+	downwardDate LocalDate
+    /**
+    *向下转诊申请（请求）医生
+    */
+	downwardRequestDoctor String
+    /**
+    *向下转诊确认时间
+    */
+	downwardTakenDate LocalDate
+}
+/**
+*家庭史
+*/
+entity FamilyHistory {
+	/**
+    *高血压
+    */
+	hypertension Boolean
+	hypertensionNote String
+	/**
+    *肝病
+    */
+	hepaticDisease Boolean
+	hepaticDiseaseNote String
+	/**
+    *癫痫
+    */
+	epilepsy Boolean
+	epilepsyNote String
+	/**
+    *心脏病
+    */
+	cardiacDisease Boolean
+	cardiacDiseaseNote String
+	/**
+    *内分泌病
+    */
+	endocrineDisease Boolean
+	endocrineDisease String
+	/**
+    *甲状腺
+    */
+	thyroidDisease Boolean
+	thyroidDisease String
+	/**
+    *血液病
+    */
+	hematopathy Boolean
+	hematopathyNote String
+	/**
+    *心理疾病
+    */
+	mentalDisease Boolean
+	mentalDiseaseNote String
+	/**
+    *糖尿病
+    */
+	diabetes Boolean
+	diabetesNote String
+}
+/**
+*手术史
+*/
+entity ProcedureHistory {
+	/**
+    *子宫手术
+    */
+	uterus Boolean
+	uterusNote String
+    /**
+    *卵巢手术
+    */
+	ovaries Boolean
+	ovariesNote String
+    /**
+    *甲状腺手术
+    */
+	thyroid Boolean
+	thyroidNote String
+    /**
+    *其他
+    */
+	other Boolean
+	otherNote String
+}
+/**
+*过敏史
+*/
+entity AllergyHistory {
+	/**
+    *青霉素
+    */
+	penicillin Boolean
+	penicillinNote String
+    /**
+    *头孢
+    */
+	cephalosporin Boolean
+	cephalosporinNote String
+    /**
+    *磺胺类
+    */
+	sulfa Boolean
+	sulfaNote String
+    /**
+    *酒精
+    */
+	alcohol Boolean
+	alcoholNote String
+    /**
+    *食物
+    */
+	food Boolean
+	foodNote String
+}
+/**
+*月经史
+*/
+entity MenstrualHistory {
+	/**
+    *月经初潮
+    */
+    menarche String
+	/**
+    *周期
+    */
+    menstrualCycle String  
+	/**
+    *持续时间
+    */
+    menstrualPeriod String
+	/**
+    *经量
+    */
+    menstrualVolume String
+	/**
+    *痛经
+    */
+    dysmenorrhea Boolean
+    dysmenorrheaNote String
+}
+/**
+*个人情况
+*/
+entity PersonalProfile {
+	/**
+    *烟
+    */
+    smoke String
+	/**
+    *烟量
+    */
+    smokeNote String
+	/**
+    *酒
+    */
+    alcohol String
+	/**
+    *酒量
+    */
+    alcoholNote String
+	/**
+    *血型
+    */
+    ABORH String
+	/**
+    *ABORH
+    */
+    RH String
+	/**
+    *接触放射性
+    */
+    radioactivity Boolean
+	/**
+    *日期-名称等
+    */
+    radioactivityNote String
+    /**
+    *药物
+    */
+    medicine Boolean
+    /**
+    *药物
+    */
+    medicineNote String
+}
+/**
+*丈夫情况
+*/
+entity PartnerProfile {
+	/**
+    *烟
+    */
+    smoke String
+	/**
+    *烟量
+    */
+    smokeNote String
+	/**
+    *酒
+    */
+    alcohol String
+	/**
+    *酒量
+    */
+    alcoholNote String
+	/**
+    *血型
+    */
+    alcoholNote String
+	/**
+    *疾病
+    */
+    disease String
+}
+/**
+*产检信息
+*/
+entity PrenatalVisit {
+	/**
+    *产检类型（首诊、复诊）
+    */
+	visitType String	
+    /**
+    *检查日期
+    */
+	visitDate LocalDate
+    /**
+    *孕周
+    */
+	gestationalWeek String
+    /**
+    *预约日期
+    */
+    appointmentDate String
+    /**
+    *诊断
+    */
+	diagnosis String
+    /**
+    *诊断编码
+    */
+	diagnosisCode String
+}
+/**
+*产前筛查
+*/
+entity PrenatalScreen {
+    /**
+    *艾滋病筛查结果
+    */
+    hivResult String
+    /**
+    *检查日期
+    */
+    hivDate LocalDate
+    /**
+    *报告
+    */
+    hivReport String
+    /**
+    *备注
+    */
+    hivNote String/**
+    *乙肝筛查结果
+    */
+    hepbResult String
+    /**
+    *检查日期
+    */
+    hepbDate LocalDate
+    /**
+    *报告
+    */
+    hepbReport String
+    /**
+    *备注
+    */
+    hepbNote String
+    /**
+    *梅毒筛查方法
+    */
+    syphilisMethod String
+    /**
+    *梅毒筛查结果
+    */
+    syphilisResult String
+    /**
+    *检查日期
+    */
+    syphilisDate LocalDate
+    /**
+    *报告
+    */
+    syphilisReport String
+    /**
+    *备注
+    */
+    syphilisNote String
+    /**
+    *地中海贫血类型
+    */
+    thalassemiaType String
+    /**
+    *地贫筛查结果
+    */
+    thalassemiaResult String
+    /**
+    *检查日期
+    */
+    thalassemiaDate LocalDate
+    /**
+    *报告
+    */
+    thalassemiaReport String
+    /**
+    *备注
+    */
+    thalassemiaNote String
+}
+/**
+*基本体检
+*/
+entity PhysicalExam {
+    /**
+    *身高
+    */
+	height String
+    /**
+    *体重
+    */
+	weight String
+    /**
+    *收缩压
+    */
+	systolic String
+    /**
+    *舒张压
+    */
+	diastolic String
+    /**
+    *脉搏
+    */
+	pulse String
+    /**
+    *体温
+    */
+	temperature String
+}
+/**
+*内科检查
+*/
+entity GeneralExam {
+    /**
+    *心脏
+    */
+	heart Integer
+    heartNote String
+    /**
+    *呼吸系统，代指肺lung
+    */
+    respiratory Integer
+    respiratoryNote String
+    /**
+    *肝脏
+    */
+	liver Integer
+    liverNote String
+    /**
+    *甲状腺
+    */
+	thyroid Integer
+    thyroidNote String
+    /**
+    *乳房
+    */
+	breast Integer
+    breastNote String
+    /**
+    *乳头
+    */
+	nipple Integer
+    nippleNote String
+    /**
+    *脾脏
+    */
+	spleen Integer
+    spleenNote String
+    /**
+    *腹部 （代指胃部）
+    */
+	stomach Integer
+    stomachNote String
+    /**
+    *黄疸
+    */
+	jaundice Integer
+    jaundiceNote String
+    /**
+    *皮肤
+    */
+	skin Integer
+    skinNote String
+    /**
+    *浮肿
+    */
+	edema Integer
+    edemaNote String
+    /**
+    *胸廓
+    */
+	thorax Integer
+    thoraxNote String
+    /**
+    *脊柱
+    */
+	spine Integer
+    spineNote String
+}
+/**
+*妇科检查
+*/
+entity GynecologicalExam {
+    /**
+    *宫高
+    */
+	fundalHeight String
+    /**
+    *腹围
+    */
+	waistHip String
+    /**
+    *胎方位
+    */
+	fetalPosition String
+    /**
+    *胎心
+    */
+    fetalHeart String
+    /**
+    *先露
+    */
+    presentation String
+    /**
+    *衔接
+    */
+    engagement String
+    /**
+    *阴道
+    */
+    vagina String
+    /**
+    *宫颈
+    */
+    cervix String
+    /**
+    *附件
+    */
+    adnexa String
+}
+/**
+*骨盆检查
+*/
+entity PelvicExam {
+    /**
+    *髂棘间径(IS)
+    */
+    interspinalDiameter String
+    /**
+    *髂嵴间径(IC)
+    */
+    intercristalDiameter String
+    /**
+    *骶耻外径(EC)
+    */
+    externalConjugate String
+    /**
+    *出口横径(坐骨结节间径IT)
+    */
+    intertuberalDiameter String
+}
+/**
+*胎儿监护
+*/
+entity CTGExam {
+    /**
+    *监护开始时间
+    */
+    startTime ZonedDateTime
+	/**
+    *监护结束时间
+    */
+    endTime ZonedDateTime
+    /**
+    *结果
+    */
+    result String
+    /**
+    *记录
+    */
+    note String
+    /**
+    *诊断
+    */
+    diagnosis String
+    /**
+    *报告
+    */
+    report String
+}
+/**
+*心电图
+*/
+entity ECGExam {
+	/**
+    *监护开始时间
+    */
+    startTime ZonedDateTime
+	/**
+    *监护结束时间
+    */
+    endTime ZonedDateTime
+    /**
+    *结果
+    */
+    result String
+    /**
+    *记录
+    */
+    note String
+    /**
+    *诊断
+    */
+    diagnosis String
+    /**
+    *报告
+    */
+    report String
+}
+/**
+*事件类型
+*/
+entity EventType {
+    /**
+    *创建时间
+    */
+    createDate ZonedDateTime
+    /**
+    *名称
+    */
+    name String
+    /**
+    *有效性
+    */
+    active Boolean
+}
+/**
+*事件
+*/
+entity Event {
+    /**
+    *创建时间
+    */
+    createDate ZonedDateTime
+    /**
+    *记录
+    */
+    note String
+}
+/**
+*产检时间轴
+*/
+entity TimeLine {
+    /**
+    *时间
+    */
+    eventDate ZonedDateTime
+    /**
+    *孕周
+    */
+    gestationalWeek String
+}
+/**
+*高危记录
+*/
+entity RiskRecord {
+    /**
+    *时间
+    */
+    eventDate ZonedDateTime
+    /**
+    *孕周
+    */
+    gestationalWeek String
+}
+/**
+*实验室检查
+*/
+entity LabExam {
+    /**
+    *时间
+    */
+    createDate ZonedDateTime
+    /**
+    *组套名称
+    */
+    suitname String
+}
+/**
+*实验室检查详情
+*/
+entity LabExamResult {
+    /**
+    *结果
+    */
+    result String
+    /**
+    *单位
+    */
+    unit String
+}
+/**
+*影像检查
+*/
+entity ImageExam {
+    /**
+    *时间
+    */
+    createDate ZonedDateTime
+    /**
+    *检查名称
+    */
+    name String
+}
+/**
+*医生
+*/
+entity Doctor {
+    /**
+    *姓名
+    */
+    name String
+    /**
+    *职称
+    */
+    title String
+    /**
+    *职称
+    */
+    title String
+    account String
+}
+/**
+*机构
+*/
+entity Organization {
+    /**
+    *名称
+    */
+    name String
+    /**
+    *别名
+    */
+    nickname String
+    /**
+    *机构号
+    */
+    organizationNO String
+    address String
+}
+//
+// defining multiple ManyToOne relationships with comments
+relationship ManyToOne {
+    PrenatalScreen to Pregnancy{prenatalscreen}
+    PrenatalVisit to Pregnancy{prenatalvisit}
+    Pregnancy{doctor} to Doctor
+    Pregnancy{organization} to Organization
+    Event{eventtype} to EventType
+    PrenatalVisit{doctor} to Doctor
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+
+    /**
+    * EAGER
+    */
+    Pregnancy to PregnancyHistory{pregnancy}
+    /**
+    * EAGER
+    */
+    Pregnancy to RiskRecord{pregnancy}
+    PrenatalVisit to LabExam{prenatalvisit}
+    PrenatalVisit to ImageExam{prenatalvisit}
+    LabExam to LabExamResult{labexam}
+}
+relationship OneToOne{
+    Pregnancy to Referral
+    Pregnancy to FamilyHistory
+    Pregnancy to ProcedureHistory
+    Pregnancy to DiseaseHistory
+    Pregnancy to AllergyHistory
+    Pregnancy to PartnerProfile
+    Pregnancy to PersonalProfile
+    Pregnancy to MenstrualHistory
+    PrenatalVisit to PhysicalExam
+    PrenatalVisit to GeneralExam
+    PrenatalVisit to GynecologicalExam
+    PrenatalVisit to PelvicExam
+    PrenatalVisit to CTGExam
+    PrenatalVisit to ECGExam
+}
+paginate Pregnancy with pagination
+//dto PrenatalVisit with mapstruct 
+service all with serviceImpl
+filter Pregnancy,PrenatalVisit
