@@ -15,7 +15,6 @@ v1.1.6
  * Allow custom representations for objects
  * Support arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types)
 
-![fastjson](logo.jpg "fastjson")
 
 ## Documentation
 
@@ -23,39 +22,26 @@ v1.1.6
 - [Contributing Code](https://github.com/nschaffner/fastjson/blob/master/CONTRIBUTING.md)
 - [Frequently Asked Questions](https://github.com/alibaba/fastjson/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
-## Benchmark
-
-https://github.com/eishay/jvm-serializers/wiki
-
 ## Usage
 
-```xml
-<dependency>
-    <groupId>com.alibaba</groupId>
-    <artifactId>fastjson</artifactId>
-    <version>1.2.58</version>
-</dependency>
+``` first of all you need to install nodejs  
+- [Nodejs Home](https://nodejs.org/en/）
 ```
 
-```xml
-<dependency>
-    <groupId>com.alibaba</groupId>
-    <artifactId>fastjson</artifactId>
-    <version>1.1.71.android</version>
-</dependency>
+``` install package :you will install our generator globally
+npm install -g generator-luna
 ```
 
-## Gradle via JCenter
-
-``` groovy
-compile 'com.alibaba:fastjson:1.2.58'
+``` make your project dir eg. windows 
+cmd
+mkdir myproject
 ```
 
-``` groovy
-compile 'com.alibaba:fastjson:1.1.71.android'
+``` copy the .jdl and run the command
+cp the OBDML02-auth.jh file into your project directory
+luna genform OBDML02-auth.jh --force
 ```
 
-Please see this [Wiki Download Page][Wiki] for more repository infos.
-
-[Wiki]: https://github.com/alibaba/fastjson/wiki#download
-
+``` at last, run mvnw
+mvnw
+```
