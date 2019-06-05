@@ -14,7 +14,7 @@ v1.1.6
 
 - [Jhipster Home](https://www.jhipster.tech/)
 - [Demo Site](https://luna.lian-med.com/)
-- [More notions](https://github.com/alibaba/fastjson/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+- [More notions](https://github.com/kisixing/LUNA)
 
 ## Usage
 v1.1.6
